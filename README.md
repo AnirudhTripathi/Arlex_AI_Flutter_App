@@ -1,6 +1,6 @@
 # Arlex - Multi Modal AI App
 
-![Group 48096098 (1)](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/9081f7f5-3d8c-4080-8c98-271aaf0c6890)
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/9081f7f5-3d8c-4080-8c98-271aaf0c6890" width="300" height="300">
 
 Welcome to the **Arlex - Multi Modal AI App** repository. This README provides a detailed overview of the project, including its objectives, features, technology stack, setup instructions, and usage guidelines.
 
@@ -18,9 +18,9 @@ Welcome to the **Arlex - Multi Modal AI App** repository. This README provides a
 
 The **Arlex - Multi Modal AI App** is a comprehensive solution designed to streamline creative workflows by integrating various AI models and tools. This application leverages Flutter and Clean Architecture principles to ensure a scalable and maintainable codebase.
 
-![Login (2)](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/e0793a5d-35ac-49a1-9fc2-621e11bef520)
-![Generate AI Images (3)](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/7decc5f6-f447-4555-807d-3a6faa4dbbec)
-![Nav Bar](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/eb8ccfe9-05ef-442e-979c-2d48b8449762)
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/e0793a5d-35ac-49a1-9fc2-621e11bef520" width="300" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/eb8ccfe9-05ef-442e-979c-2d48b8449762" width="207" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/7decc5f6-f447-4555-807d-3a6faa4dbbec" width="300" >
 
 ## Objectives
 
@@ -43,9 +43,10 @@ The **Arlex - Multi Modal AI App** is a comprehensive solution designed to strea
 - **Professional Content Creation:** Support structured article and blog post generation.
 - **Corporate Knowledge Base Management:** Automatically summarize internal documents for improved accessibility.
   
-![Chatbot (1)](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/40c7591f-f7cf-47ac-a4f6-1bb7f340ad16)
-![document upload (2)](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/eee370d5-175a-445e-b16d-706e06560a69)
-![Generate AI Images (4)](https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/2912c0bc-f863-4b14-9960-1297899fec79)
+  
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/40c7591f-f7cf-47ac-a4f6-1bb7f340ad16" width="300" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/eee370d5-175a-445e-b16d-706e06560a69" width="300" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/2912c0bc-f863-4b14-9960-1297899fec79" width="300" >
 
 ### Prerequisites
 
