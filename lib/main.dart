@@ -10,9 +10,21 @@ import 'helper/routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  try {
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+      print("Firebase initialized successfully");
+    } else {
+      print("Firebase was already initialized");
+    }
+  } catch (e) {
+    print("Error initializing Firebase: $e");
+    // Consider how you want to handle this error. You might want to show a user-friendly message or exit the app.
+  }
+
+
   await dep.init();
   final apiService = Get.find<ApiService>();
   await apiService.onInit();
@@ -46,7 +58,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return GetMaterialApp(
-          title: 'Flutter Demo',
+          title: 'Alrex',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),

@@ -214,9 +214,12 @@ class SignUpScreen extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
-                                Icons.g_mobiledata_outlined,
-                                size: 30.sp,
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 10.w),
+                                child: Image.asset(
+                                  'assets/images/google.png', // Replace with your image path
+                                  height: 25.w,
+                                ),
                               ),
                               Text(
                                 "Sign in with Google",

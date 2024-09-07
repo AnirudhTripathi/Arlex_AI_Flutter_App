@@ -139,6 +139,7 @@ class HomeScreenController extends GetxController {
             query: searchedText, response: lastText ?? "Error accoured"));
       });
     } catch (e) {
+      print("Chat bot error: $e");
       streamingData.value = false;
       if (chats.last.role == 'user') {
         chats.removeLast();
@@ -211,7 +212,7 @@ class HomeScreenController extends GetxController {
         scrollToBottomImageChat();
         final result = await gemini.textAndImage(
           text: "Describe the images?",
-          modelName: 'models/gemini-1.5-pro-latest',
+          modelName: 'models/gemini-1.5-flash-latest',
           images: List.from(selectedImages),
         );
         imageChats.removeLast();

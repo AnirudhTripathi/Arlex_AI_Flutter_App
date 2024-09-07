@@ -127,7 +127,8 @@ class HomeScreenService {
       return titles;
     } catch (e) {
       print('Error fetching chats from Firebase: $e');
-      rethrow; // Rethrow for further handling if needed
+      rethrow;
+       // Rethrow for further handling if needed
     }
   }
 
@@ -161,7 +162,6 @@ class HomeScreenService {
       print("Successfully signed out!");
     } catch (e) {
       print("Error signing out: e");
-      // Handle errors appropriately, e.g., show a snackbar to the user
     }
   }
 }

@@ -34,7 +34,7 @@ class ChatItemWidget extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.r),
                           color: AppColors.homescreenBgColor),
                       child: const Icon(
-                        Icons.person,
+                        Icons.person_outline_rounded,
                         color: Colors.blue,
                       ),
                     ),
@@ -42,60 +42,107 @@ class ChatItemWidget extends StatelessWidget {
                       width: 10.w,
                     ),
                     Expanded(
-                        child: Container(
-                            padding: EdgeInsets.all(10.h),
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10.r),
-                                color: const Color(0xFF7176ED)),
-                            child: ExpandableTextWidget(
-                              text: content.parts?.lastOrNull!.text ??
-                                  'Some error occured',
-                            ))),
+                      child: Container(
+                        padding: EdgeInsets.all(10.h),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.r),
+                            color: const Color(0xFF7176ED)),
+                        child: ExpandableTextWidget(
+                          text: content.parts?.lastOrNull!.text ??
+                              'Some error occured',
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               )
-            : Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
+            : Column(
                 children: [
-                  InkWell(
-                    onTap: () {
-                      Clipboard.setData(ClipboardData(
-                          text: content.parts?.lastOrNull?.text.toString() ??
-                              ""));
-
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content:
-                              Text('Data copied to clipboard successfully!'),
-                          duration: Duration(seconds: 1),
-                          behavior: SnackBarBehavior.floating,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10.h, horizontal: 15.w),
+                          child: Markdown(
+                              shrinkWrap: true,
+                              selectable: true,
+                              softLineBreak: true,
+                              styleSheet: MarkdownStyleSheet(
+                                p: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14.sp,
+                                ),
+                              ),
+                              physics: const NeverScrollableScrollPhysics(),
+                              data: content.parts?.lastOrNull?.text ??
+                                  'cannot generate data!'),
                         ),
-                      );
-                    },
-                    child: Obx(
-                      () => Padding(
-                        padding: EdgeInsets.only(left: 5.w, top: 15.h),
-                        child:
-                            Get.find<HomeScreenController>().streamingData.value
-                                ? Lottie.asset('assets/lottie/streaming.json',
-                                    width: 25.w, height: 25.h)
-                                : Icon(Icons.copy_all_outlined, size: 25.sp),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    color: Colors.white,
+                    child: InkWell(
+                      onTap: () {
+                        Clipboard.setData(
+                          ClipboardData(
+                              text:
+                                  content.parts?.lastOrNull?.text.toString() ??
+                                      ""),
+                        );
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content:
+                                Text('Data copied to clipboard successfully!'),
+                            duration: Duration(seconds: 1),
+                            behavior: SnackBarBehavior.floating,
+                          ),
+                        );
+                      },
+                      child: Obx(
+                        () => Padding(
+                          padding: EdgeInsets.only(
+                            left: 250.w,
+                          ),
+                          child: Get.find<HomeScreenController>()
+                                  .streamingData
+                                  .value
+                              ? Lottie.asset(
+                                  'assets/lottie/streaming.json',
+                                  width: 25.w,
+                                  height: 25.h,
+                                )
+                              : Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30.r),
+                                      color: const Color(0xFF7176ED)),
+                                  child: Padding(
+                                    padding: EdgeInsets.all(5.w),
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.copy_all_outlined,
+                                          size: 25.sp,
+                                          color: Colors.white,
+                                        ),
+                                        Text(
+                                          "Copy",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                        ),
                       ),
                     ),
                   ),
-                  Expanded(
-                      child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.w),
-                    child: Markdown(
-                        shrinkWrap: true,
-                        selectable: true,
-                        softLineBreak: true,
-                        physics: const NeverScrollableScrollPhysics(),
-                        data: content.parts?.lastOrNull?.text ??
-                            'cannot generate data!'),
-                  )),
                 ],
               ),
       ],

@@ -73,7 +73,8 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
       textAlign: TextAlign.left,
       style: TextStyle(
         color: color,
-        fontWeight: FontWeight.w500,
+        fontSize: 15.sp,
+        fontWeight: FontWeight.w700,
       ),
       // overflow: TextOverflow.ellipsis,
     );
