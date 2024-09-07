@@ -1,13 +1,14 @@
-# Arlex Flutter App
+# Arlex - Multi Modal AI App
 
-Welcome to the **Arlex Flutter App** repository. This README provides a detailed overview of the project, including its objectives, features, technology stack, setup instructions, and usage guidelines.
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/9081f7f5-3d8c-4080-8c98-271aaf0c6890" width="300" height="300">
+
+Welcome to the **Arlex - Multi Modal AI App** repository. This README provides a detailed overview of the project, including its objectives, features, technology stack, setup instructions, and usage guidelines.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Objectives](#objectives)
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -15,7 +16,11 @@ Welcome to the **Arlex Flutter App** repository. This README provides a detailed
 
 ## Introduction
 
-The **Arlex Flutter App** is a comprehensive solution designed to streamline creative workflows by integrating various AI models and tools. This application leverages Flutter and Clean Architecture principles to ensure a scalable and maintainable codebase.
+The **Arlex - Multi Modal AI App** is a comprehensive solution designed to streamline creative workflows by integrating various AI models and tools. This application leverages Flutter and Clean Architecture principles to ensure a scalable and maintainable codebase.
+
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/e0793a5d-35ac-49a1-9fc2-621e11bef520" width="300" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/eb8ccfe9-05ef-442e-979c-2d48b8449762" width="207" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/7decc5f6-f447-4555-807d-3a6faa4dbbec" width="300" >
 
 ## Objectives
 
@@ -37,13 +42,20 @@ The **Arlex Flutter App** is a comprehensive solution designed to streamline cre
 - **Technical Document Summarization:** Facilitate research and knowledge sharing via document summaries.
 - **Professional Content Creation:** Support structured article and blog post generation.
 - **Corporate Knowledge Base Management:** Automatically summarize internal documents for improved accessibility.
-
-## Installation
+  
+  
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/40c7591f-f7cf-47ac-a4f6-1bb7f340ad16" width="300" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/eee370d5-175a-445e-b16d-706e06560a69" width="300" >
+<img src="https://github.com/AnirudhTripathi/arlex_ai_flutter_app/assets/89296975/2912c0bc-f863-4b14-9960-1297899fec79" width="300" >
 
 ### Prerequisites
 
 - Flutter SDK
 - Dart
+- Python
+- large Language Model Traning and Fine-Tuning
+- AI
+- ML
 
 ### Steps
 
@@ -86,7 +98,7 @@ The **Arlex Flutter App** is a comprehensive solution designed to streamline cre
 
 ## Contributing
 
-We welcome contributions to enhance the Arlex Flutter App. Please follow these steps:
+We welcome contributions to enhance the Arlex - Multi Modal AI App. Please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature-name`.
@@ -102,4 +114,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or support, please reach out to the project owner Anitudh Tripathi.
 
-Thank you for using the Arlex Flutter App! We hope it enhances your creative workflows and productivity.
+Thank you for using the Arlex - Multi Modal AI App! We hope it enhances your creative workflows and productivity.
